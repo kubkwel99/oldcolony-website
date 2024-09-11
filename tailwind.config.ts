@@ -12,7 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
     },
+    fontFamily: {
+      'delagot': ['var(--font-DelaGothicOne-sans)', 'sans-serif'],
+    }
   },
   plugins: [],
 };

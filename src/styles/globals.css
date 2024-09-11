@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ededed;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 1.2rem;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInLetter {
+  animation: fadeInLetter 0.5s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
